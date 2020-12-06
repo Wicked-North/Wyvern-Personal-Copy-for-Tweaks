@@ -55,7 +55,7 @@ const app = express();
 var con = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "abhra",
+    password: "",
     database: "wyvern",
     multipleStatements: true
 })
@@ -199,7 +199,7 @@ app.post('/getLogin', (req, res) => {
                         }
                     );
                     sess = "1";
-                    res.setHeader('email', 'abhraghosh9@gmail.com')
+                    res.setHeader('email', 'Sagnikghosh9@gmail.com')
 
 
                     setTimeout(() => {
@@ -238,7 +238,7 @@ app.post('/getLogin', (req, res) => {
 })
 
 app.get('/get_userDetails', (req, res) => {
-    res.setHeader('email', 'abhraghosh9@gmail.com')
+    res.setHeader('email', 'sagnik@gmail.com')
     res.json(userDetails)
 
     console.log('route get details server side', userDetails)
@@ -258,7 +258,7 @@ app.post("/getViaDetails", (req, res) => {
         console.log(result)
         res.json(result)
     })
-    //res.json({name : "abhra"})
+    //res.json({name : "Sagnik"})
 });
 
 app.post("/getDirectDetails", (req, res) => {
@@ -271,7 +271,7 @@ app.post("/getDirectDetails", (req, res) => {
         console.log(result)
         res.json(result)
     })
-    //res.json({name : "abhra"})
+    //res.json({name : "Sagnik"})
 });
 
 app.post("/optimisedVia", (req, res) => {
@@ -284,7 +284,7 @@ app.post("/optimisedVia", (req, res) => {
         console.log(result)
         res.json(result)
     })
-    //res.json({name : "abhra"})
+    //res.json({name : "Sagnik"})
 });
 
 app.post("/bookSeats", (req, res) => {
@@ -372,7 +372,7 @@ app.post("/getSeatDets", (req, res) => {
         res.json(result)
 
     })
-    //res.json({name : "abhra"})
+    //res.json({name : "Sagnik"})
 });
 
 
